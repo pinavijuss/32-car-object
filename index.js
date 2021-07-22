@@ -25,18 +25,18 @@ zapas.maxDistance();
 opelis.maxDistance();
 // Opel can travel maximum 611 km.
 
-// zapas.canTravel(5);
-// // Zapukas can travel 5 km.
-// opelis.canTravel(5);
-// // Opel can travel 5 km.
-// zapas.canTravel(50);
-// // Zapukas can travel 50 km.
-// opelis.canTravel(50);
-// // Opel can travel 50 km.
-// zapas.canTravel(500);
-// // Zapukas can't travel 500 km, it has fuel only for 254 km.
-// opelis.canTravel(500);
-// // Opel can't travel 500 km, it has fuel only for 478 km.
+zapas.canTravel(5);
+// Zapukas can travel 5 km.
+opelis.canTravel(5);
+// Opel can travel 5 km.
+zapas.canTravel(50);
+// Zapukas can travel 50 km.
+opelis.canTravel(50);
+// Opel can travel 50 km.
+zapas.canTravel(500);
+// Zapukas can't travel 500 km, it has fuel only for 254 km.
+opelis.canTravel(500);
+// Opel can't travel 500 km, it has fuel only for 478 km.
 
 // zapas.continueTravel(50);
 // // Zapukas can travel 50 km, no extra fuel is needed.

@@ -31,10 +31,21 @@ class Car {
 
     maxDistance() {
 
-        const maxCanTravel = (this.data.tankSize.maxSize * 100) / this.data.fuelConsumption;
-        console.log(`${this.data.brand} can travel maximum ${maxCanTravel.toFixed(0)}km.`);
+        const maxKmCanGo = (this.data.tankSize.maxSize * 100) / this.data.fuelConsumption;
+        console.log(`${this.data.brand} can travel maximum ${maxKmCanGo.toFixed(0)}km.`);
     }
 
+    canTravel(distanceKm) {
+        const tankSize = this.data.tankSize;
+        const petrolLeftInKm = (tankSize.currentSize * 100) / this.data.fuelConsumption;
+
+        if (petrolLeftInKm >= distanceKm) {
+            console.log(`${this.data.brand} can travel ${distanceKm} km.`)
+        } else {
+            console.log(`${this.data.brand} can't travel ${distanceKm} km, it has fuel only for ${petrolLeftInKm.toFixed(0)} km.`)
+        }
+
+    }
 
 }
 module.exports = Car;
